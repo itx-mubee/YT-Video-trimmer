@@ -23,7 +23,8 @@ root.title("YouTube Trimmer")
 root.geometry("500x400")
 
 # Load the background image
-bg_image = Image.open("C:/Python_projects/Python/Video Trimmer/background.jpg")
+bg_image = Image.open("C:/Python_projects/Python/Video Trimmer/background.jpg")  # Change this path to your local directory otherwise it will not run!!
+logo_photo = ImageTk.PhotoImage(logo_image)
 bg_photo = ImageTk.PhotoImage(bg_image)
 
 # Create a label with the background image
@@ -31,7 +32,7 @@ bg_label = tk.Label(root, image=bg_photo)
 bg_label.place(x=5, y=7, relwidth=1, relheight=1)
 
 # Load the logo image
-logo_image = Image.open("C:/Python_projects/Python/Video Trimmer/logo.png")
+logo_image = Image.open("C:/Python_projects/Python/Video Trimmer/logo.png")  # Change this path to your local directory otherwise it will not run!!
 logo_photo = ImageTk.PhotoImage(logo_image)
 '''
 # Create a label with the logo image
