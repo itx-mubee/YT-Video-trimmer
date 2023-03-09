@@ -5,7 +5,15 @@ Allrights are reserved by the Developer also code is provided so this is opensou
 
 # Things You need to download:
 google_auth_oauthlib
+
+
 googleapiclient
+
+
 googleapiclient
+
+
 tkinter 
+
+
 Pillow
