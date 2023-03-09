@@ -8,7 +8,7 @@ from PIL import ImageTk, Image
 # Set up the YouTube API client
 api_service_name = "youtube"
 api_version = "v3"
-client_secrets_file = "C:/Python_projects/Python/Video Trimmer/client_secret.json"
+client_secrets_file = "client_secret.json" # Also change this path to your path secret you can create your own secret but i have provided mine to use it
 
 flow = google_auth_oauthlib.flow.InstalledAppFlow.from_client_secrets_file(
     client_secrets_file, scopes=["https://www.googleapis.com/auth/youtube.force-ssl"]
@@ -23,7 +23,7 @@ root.title("YouTube Trimmer")
 root.geometry("500x400")
 
 # Load the background image
-bg_image = Image.open("C:/Python_projects/Python/Video Trimmer/background.jpg")  # Change this path to your local directory otherwise it will not run!!
+bg_image = Image.open("background.jpg")  # Change this path to your local directory otherwise it will not run!!
 logo_photo = ImageTk.PhotoImage(logo_image)
 bg_photo = ImageTk.PhotoImage(bg_image)
 
@@ -32,7 +32,7 @@ bg_label = tk.Label(root, image=bg_photo)
 bg_label.place(x=5, y=7, relwidth=1, relheight=1)
 
 # Load the logo image
-logo_image = Image.open("C:/Python_projects/Python/Video Trimmer/logo.png")  # Change this path to your local directory otherwise it will not run!!
+logo_image = Image.open("logo.png")  # Change this path to your local directory otherwise it will not run!!
 logo_photo = ImageTk.PhotoImage(logo_image)
 '''
 # Create a label with the logo image
